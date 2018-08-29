@@ -10,7 +10,7 @@ import java.util.List;
 public class BookService extends BaseEntityService<Long, Book> {
 
     public void createBook(Book book) {
-        super.getEntityManager().persist(book);
+        super.persist(book);
     }
 
     public void updateBook(Book book) {

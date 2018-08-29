@@ -13,7 +13,7 @@ public class BookDetails extends BaseEntity<Long> {
     private Long id;
 
     @MapsId
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne
     private Book book;
 
     @NotNull

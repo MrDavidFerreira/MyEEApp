@@ -15,8 +15,7 @@ public class Book extends BaseEntity<Long> {
     @NotNull
     private String name;
 
-    @OneToOne(mappedBy = "book", cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY, optional = false)
+    @OneToOne(mappedBy = "book")
     private BookDetails details;
 
     @Override

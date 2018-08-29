@@ -27,11 +27,18 @@
             <version>5.3.4.Final</version>
         </dependency>
         <!-- JDBC Driver - MySQL -->
-        <!--<dependency>-->
-            <!--<groupId>mysql</groupId>-->
-            <!--<artifactId>mysql-connector-java</artifactId>-->
-            <!--<version>8.0.12</version>-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.12</version>
             <!--<scope>provided</scope>-->
+        </dependency>
+        <!-- JDBC Driver - SQL Server -->
+        <!--<dependency>-->
+            <!--<groupId>com.microsoft.sqlserver</groupId>-->
+            <!--<artifactId>mssql-jdbc</artifactId>-->
+            <!--<version>7.0.0.jre8</version>-->
+            <!--&lt;!&ndash;<scope>provided</scope>&ndash;&gt;-->
         <!--</dependency>-->
         <!-- OmniFaces -->
         <dependency>

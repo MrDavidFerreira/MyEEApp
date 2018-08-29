@@ -34,4 +34,31 @@
         </property>
     </data-source>
 
+    <data-source>
+        <name>java:app/MyEEApp/MyDS2</name>
+        <class-name>com.microsoft.sqlserver.jdbc.SQLServerXADataSource</class-name>
+        <server-name>localhost/SQLEXPRESS</server-name>
+        <port-number>1434</port-number>
+        <database-name>myeedb</database-name>
+        <user>sa</user>
+        <password>1234</password>
+        <!--SQL Server specific properties-->
+        <!--<property>-->
+            <!--<name>serverTimezone</name>-->
+            <!--<value>UTC</value>-->
+        <!--</property>-->
+        <!--<property>-->
+            <!--<name>useSSL</name>-->
+            <!--<value>false</value>-->
+        <!--</property>-->
+        <!--<property>-->
+            <!--<name>characterEncoding</name>-->
+            <!--<value>UTF8</value>-->
+        <!--</property>-->
+        <!--<property>-->
+            <!--<name>allowPublicKeyRetrieval</name>-->
+            <!--<value>true</value>-->
+        <!--</property>-->
+    </data-source>
+
 </web-app>

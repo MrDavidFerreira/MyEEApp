@@ -1,17 +1,31 @@
 package com.jdfg.myeeapp.service;
 
+import com.jdfg.myeeapp.model.Book;
 import com.jdfg.myeeapp.model.BookDetails;
 import org.omnifaces.persistence.service.BaseEntityService;
 
 import javax.ejb.Stateless;
-import java.util.List;
+import javax.inject.Inject;
 
 @Stateless
 public class BookDetailsService extends BaseEntityService<Long, BookDetails> {
 
+    @Inject
+    BookService bookService;
+
     public void createBookDetails(BookDetails details) {
-        super.getEntityManager().persist(details);
-//        super.persist(details);
+        Book b = new Book();
+
+        b.setId(details.getId());
+        b.setName("Littler2");
+
+        bookService.createBook(b);
+
+        details.setBook(b);
+
+
+        //super.getEntityManager().persist(details);
+        super.persist(details);
     }
 
     public void updateBookDetails(BookDetails details) {
