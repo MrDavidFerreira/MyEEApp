@@ -14,14 +14,14 @@ public class BookDetailsService extends BaseEntityService<Long, BookDetails> {
     BookService bookService;
 
     public void createBookDetails(BookDetails details) {
-        Book b = new Book();
+//        Book b = new Book();
+//
+//        b.setId(details.getId());
+//        b.setName("Littler2");
 
-        b.setId(details.getId());
-        b.setName("Littler2");
+        bookService.createBook(details.getBook());
 
-        bookService.createBook(b);
-
-        details.setBook(b);
+//        details.setBook(details.getBook());
 
 
         //super.getEntityManager().persist(details);

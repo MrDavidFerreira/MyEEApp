@@ -35,10 +35,10 @@
         </dependency>
         <!-- JDBC Driver - SQL Server -->
         <!--<dependency>-->
-            <!--<groupId>com.microsoft.sqlserver</groupId>-->
-            <!--<artifactId>mssql-jdbc</artifactId>-->
-            <!--<version>7.0.0.jre8</version>-->
-            <!--&lt;!&ndash;<scope>provided</scope>&ndash;&gt;-->
+        <!--<groupId>com.microsoft.sqlserver</groupId>-->
+        <!--<artifactId>mssql-jdbc</artifactId>-->
+        <!--<version>7.0.0.jre8</version>-->
+        <!--&lt;!&ndash;<scope>provided</scope>&ndash;&gt;-->
         <!--</dependency>-->
         <!-- OmniFaces -->
         <dependency>
@@ -51,6 +51,12 @@
             <groupId>org.omnifaces</groupId>
             <artifactId>omnipersistence</artifactId>
             <version>0.7</version>
+        </dependency>
+        <!--Primefaces-->
+        <dependency>
+            <groupId>org.primefaces</groupId>
+            <artifactId>primefaces</artifactId>
+            <version>6.2</version>
         </dependency>
     </dependencies>
 

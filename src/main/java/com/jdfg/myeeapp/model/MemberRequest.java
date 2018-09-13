@@ -16,7 +16,7 @@ public class MemberRequest extends GeneratedIdEntity<Long> {
 
     @NotNull
     @ManyToOne
-    @JoinColumn(name = "book_id")
+    @JoinColumn()
     private Book book;
 
     public Instant getDateRequested() {

@@ -20,6 +20,10 @@ public class BookDetails extends BaseEntity<Long> {
     @Column(name = "number_of_pages")
     private int numberOfPages;
 
+    public void BookDetails() {
+        book = new Book();
+    }
+
     @Override
     public Long getId() {
         return id;
